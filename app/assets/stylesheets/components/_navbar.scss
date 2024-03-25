@@ -14,7 +14,6 @@
   width: 15rem;
 }
 
-// ! regarder sur bootstrap pour le collapse de la navbar
-body {
-  background-color: red;
+.navbar-toggler .collapsed {
+  border-style: none;
 }
