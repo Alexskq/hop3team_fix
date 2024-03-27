@@ -63,7 +63,8 @@ figure {
 }
 
 .wp-block-group {
-  max-width: 690px;
+  display: flex;
+  justify-content: center;
 }
 
 .wp-block-item img {
