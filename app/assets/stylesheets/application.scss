@@ -16,3 +16,19 @@
 @import "bootstrap";
 @import "components/index";
 @import "pages/index";
+
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-500,
+  "gray-dark": $gray-800,
+);
