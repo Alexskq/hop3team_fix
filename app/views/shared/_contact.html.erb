@@ -1,8 +1,10 @@
 <section>
-    <div class="container d-flex">
-        <div class="contact-form">
-            <h2 class="fs-2 fw-bolder">Contactez-nous ! </h2>
-        <div class="d-flex">
+    <div class="container d-flex gap-4">
+        <div class="contact-form d-flex flex-column ">
+            <h2 class="fs-2 fw-bolder align-self-start">Contactez-nous ! </h2>
+
+            <%# -------- radio button --------- %>
+        <div class="d-flex gap-4">
             <div class="form-check d-flex flex-column align-items-center">
                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                 <label class="form-check-label" for="exampleRadios1">
@@ -16,10 +18,108 @@
                 </label>
             </div>
         </div>
+            <%# ---------------- form ---------------- %>
+            <form class="mt-4">
+                <div class="form-group mb-4">
+                    <label for="exampleInputEmail1">Votre prénom (requis) :</label>
+                    <input type="text" class="form-control border-size" id="exampleInputText1" aria-describedby="textHelp" placeholder="Prénom" required>
+                </div>
+                 <div class="form-group mb-4">
+                    <label for="exampleInputEmail1">Votre nom (requis) :</label>
+                    <input type="email" class="form-control border-size" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom" required>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="exampleInputEmail1">Votre société :</label>
+                    <input type="email" class="form-control border-size" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Société">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="exampleInputEmail1">Votre Email (requis) :</label>
+                    <input type="email" class="form-control border-size" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="exampleInputEmail1">Votre téléphone :</label>
+                    <input type="email" class="form-control border-size" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Téléphone">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Votre message :</label>
+                    <textarea class="form-control border-size" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">J'ai lu et j'accepte <%= link_to "la politique de protection des données et des cookies","https://www.hop3team.com/mentions-legales/", class:"data" %></label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
         </div>
+        
+        <%# -------------------- FAQ --------------------- %>
         <div class="contact-faq">
             <h2 class="fs-2 fw-bolder">Hop3team c'est...</h2>
-            
+            <p>Vous vous posez beaucoup de questions ? Comme nous vous comprenons !!</p>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Pourquoi est-ce mieux d’être des experts de la formation pour créer un logiciel de gestion ?
+                        </button>
+                    </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                        Parce que l’outil doit servir l’artisan ! L’important de notre point de vue, c’est l’approche “métier“. Pour créer un outil de gestion dédié aux organismes de formation, il faut connaître la réalité des organismes de formation, et là, pour avoir vécu la même chose que vous, cette réalité, nous la connaissons…
+                            En fait, nous avons développé initialement l’outil que nous aurions aimé avoir quand nous travaillions dans la formation !
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Ne faut-il pas être informaticien pour développer un logiciel ?
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                         Si. Pour assurer la dimension technique de notre outil, nous nous sommes assuré de la meilleure direction technique disponible <%= link_to "(www.fractory.io)","http://www.fractory.io/", class:"faq-link"%> et des meilleurs développeurs possibles <%= 
+                            link_to "(www.derniercri.io", "http://www.derniercri.io/", class:"faq-link"%> et <%= link_to"www.tymate.com)", "http://www.tymate.com/", class:"faq-link" %>. Nous avons été incubés à Euratechnologies <%= link_to "(www.euratechnologies.com)", "www.euratechnologies.com", class:"faq-link" %> en 2018, et faisons partie aujourd’hui d’un écosystème digital à la pointe des nouvelles technologies. Nous avons disposé des meilleurs experts techniques qui soient
+                            tout au long de notre gestation. Et nous intégrons nos premiers collaborateurs techniques avec le meilleur sourcing RH dont une jeune entreprise peut rêver.
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Vous avez abandonné la formation ou vous continuez ?
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Notre entreprise fait partie de la formation parce qu’elle traite de formation, qu’elle porte la conformité de la formation et parce que toute notre veille (permanente) est tournée vers la réforme de la formation. Nous n’avons donc pas quitté la formation. Mais en plus, notre entreprise dispose de son organisme de formation, qui était référencé au DataDock, qui est certifié Qualiopi depuis décembre 2020 pour ses actions de formations et éligible au CPF dans le cadre de la création d’entreprise (code 203 – avant obtention du SIRET). Nous assurons la montée en compétences de nos clients dans les actions de formations que représentent les ateliers de co-conception et les formations dans le cadre de la conduite du changement. Nous accompagnons également à la création d’organisme de formation, à l’obtention du NDA (numéro de déclaration d’activité) et à la certification Qualiopi. Bref : on continue et <strong>on est comme vous !</strong>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Il existe déjà d'autres logiciels de gestion, du coup, pourquoi le vôtre ?
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Oui, c’est vrai. Et certains sont vraiment très bien. Nous sommes un choix supplémentaire, différent. Outre la conduite du changement pour vous accompagner dans la mise en production et l’utilisation de votre logiciel, nous sommes les seuls à proposer un outil qui dématérialise aussi globalement votre activité. Depuis la création de vos parcours de formation et leur commercialisation, jusqu’à l’archivage pendant 10 ans de vos dossiers. En passant par toutes les étapes de conformité actuelles
+                        et futures (loi avenir de la formation professionnelle 2020) y compris celles de la certification des programmes. Et s’il fallait une autre raison, notre outil est un outil créé par des experts de la formation. Pas par des informaticiens.
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <%# ! TODO min width form  %>
         </div>
     </div>
 </section>

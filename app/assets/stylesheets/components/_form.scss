@@ -7,3 +7,33 @@
   height: 1.5rem;
   width: 1.5rem;
 }
+
+.btn {
+  background-color: #e7b746;
+  border: 2px solid #7b4e91;
+  border-radius: 0;
+  padding: 0.5rem 2rem;
+  color: white;
+  float: right;
+}
+
+.form-group > label {
+  float: left;
+}
+
+.border-size {
+  border: 2px solid #c1c1c1 !important;
+}
+
+.form-check-label a {
+  color: #7b4e91;
+  text-decoration: none !important;
+}
+
+.faq-link {
+  color: #7b4e91;
+  text-decoration: none !important;
+}
+#accordion > a {
+  text-decoration: none !important;
+}
