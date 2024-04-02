@@ -1,0 +1,21 @@
+footer {
+  background-color: #303030;
+  padding: 2rem 1rem;
+  p {
+    color: white;
+    margin: 0;
+  }
+}
+footer li {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: #7b4e91;
+}
+
+footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
