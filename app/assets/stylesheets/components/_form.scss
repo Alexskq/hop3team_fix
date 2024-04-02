@@ -8,6 +8,10 @@
   width: 1.5rem;
 }
 
+.contact-form {
+  min-width: 50%;
+}
+
 .btn {
   background-color: #e7b746;
   border: 2px solid #7b4e91;
@@ -36,4 +40,30 @@
 }
 .btn.btn-link {
   text-decoration: none !important;
+  color: black;
+  border: none !important;
+}
+
+.card {
+  border-color: transparent !important;
+  margin-bottom: 0.5rem;
+}
+
+.card-header {
+  background-color: transparent !important;
+  border-bottom: none !important;
+  padding: 0;
+}
+
+.card-body {
+  background-color: rgba(231, 183, 70, 0.4);
+}
+.fa-solid {
+  position: absolute;
+  top: 23px;
+  left: 14px;
+}
+
+button.btn-link:hover {
+  background-color: #e7b746 !important;
 }
