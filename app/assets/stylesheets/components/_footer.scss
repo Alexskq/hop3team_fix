@@ -19,3 +19,22 @@ footer a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
+.footer-partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-partners__item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-heading {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-style: 2rem;
+}
