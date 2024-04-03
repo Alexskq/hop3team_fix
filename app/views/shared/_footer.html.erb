@@ -67,61 +67,65 @@
                   </li>
             </ul>
       
-            <div class="footer-nav">
+            <div class="footer-nav mt-4">
                 <ul id="menu-menu-pied-de-page" class="footer-items list-unstyled">
-                    <li id="menu-item-89" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-89"><a>Documents</a></li>
-                    <li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-90"><a>Aide</a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-7446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7446"><a href="https://www.hop3team.com/glossaire/">Glossaire</a></li>
-                        <li id="menu-item-2729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2729"><a href="https://www.hop3team.com/ressources#evaluations">Évaluations</a></li>
-                        <li id="menu-item-2733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2733"><a href="https://www.hop3team.com/ressources#certifications">Certifications</a></li>
-                        <li id="menu-item-2734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2734"><a href="https://www.hop3team.com/actualites-formation-professionnelle/">Blog</a></li>
-                    </ul>
-                    </li>
-                    <li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91"><a>Notre offre</a>
+                    <li class="fw-bolder">Documents</li>
+                    <li class="fw-bolder">Aide
                         <ul class="sub-menu">
-                            <li id="menu-item-10759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10759"><a href="https://www.hop3team.com/webinaires/">Suivre une présentation</a></li>
-                            <li id="menu-item-2645" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2645"><a href="https://www.hop3team.com/tarifs#licences">Tarifs</a></li>
-                            <li id="menu-item-7441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7441"><a href="https://www.hop3team.com/contact/">Contact</a></li>
-                            <li id="menu-item-7439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7439"><a href="https://www.hop3team.com/faq/">FAQ</a></li>
+                            <li class="fw-light fs-6"> <%= link_to "Évaluations", "https://www.hop3team.com/ressources#evaluations"%></li>
+                            <li class="fw-light"> <%= link_to "Certifications", "https://www.hop3team.com/ressources#certifications" %> </li>
+                            <li class="fw-light"> <%= link_to "Glossaire", "https://www.hop3team.com/glossaire/" %></li>
+                            <li class="fw-light"> <%= link_to "Blog", "https://www.hop3team.com/actualites-formation-professionnelle/" %></li>
                         </ul>
                     </li>
-                </ul>
-              </div>
-            <div class="footer-contact">
-                <ul id="menu-menu-bas-pied-de-page" class="footer-items list-unstyled">
-                    <li id="menu-item-109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-109"><a>Informations</a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-7448" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7448"><a href="https://www.hop3team.com/temoignages-clients/">Témoignages clients</a></li>
-                        <li id="menu-item-7450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7450"><a href="https://www.hop3team.com/sinscrire-a-la-newsletter/">S&rsquo;inscrire à la newsletter</a></li>
-                        <li id="menu-item-7452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7452"><a href="https://www.hop3team.com/revue-de-presse/">Revue de presse</a></li>
-                        <li id="menu-item-12832" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12832"><a href="https://www.hop3team.com/mentions-legales/">Mentions légales</a></li>
+                    <li class="fw-bolder">Notre offre</a>
+                        <ul class="sub-menu">
+                            <li class="fw-light"> <%= link_to "Suivre une présentation", "https://www.hop3team.com/webinaires/" %></li>
+                            <li class="fw-light"> <%= link_to "Tarifs", "https://www.hop3team.com/tarifs#licences" %></li>
+                            <li class="fw-light"> <%= link_to "Contact", "https://www.hop3team.com/contact/" %></li>
+                            <li class="fw-light"> <%= link_to "FAQ", "https://www.hop3team.com/faq/"%></li>
+                        </ul>
+                    </li>
+                    <div class="footer-contact">
+                        <ul id="menu-menu-bas-pied-de-page" class="footer-items list-unstyled">
+                            <li class="fw-bolder">Informations</a>
+                            <ul class="sub-menu">
+                                <li class="fw-light"> <%= link_to "Témoignages clients", "https://www.hop3team.com/temoignages-clients/"%></li>
+                                <li class="fw-light"> <%= link_to "S'inscrire à la newlsletter", "https://www.hop3team.com/sinscrire-a-la-newsletter/"%><li>
+                                <li class="fw-light"> <%= link_to "Revue de presse", "https://www.hop3team.com/revue-de-presse/"%></li>
+                                <li class="fw-light"> <%= link_to "Mentions légales", "https://www.hop3team.com/mentions-legales/" %></li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="footer-items footer-social list-unstyled">
+                        <li class="footer-social__item">
+                            <a href="https://www.facebook.com/hop3team/" target="_blank" rel="noreferrer" title="Facebook - Hop3team">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            </li>
+                        <li class="footer-social__item">
+                            <a href="https://www.instagram.com/hop3team/" target="_blank" rel="noreferrer" title="Instagram - Hop3team">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            </li>
+                        <li class="footer-social__item">
+                            <a href="https://www.linkedin.com/company/hop3team/?originalSubdomain=fr" target="_blank" rel="noreferrer" title="LinkedIn - Hop3team">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            </li>
+                        <li class="footer-social__item">
+                            <a href="https://twitter.com/hop3team?lang=fr" target="_blank" rel="noreferrer" title="Twitter - Hop3team">
+                               <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            </li>
                     </ul>
-                    </li>
-                </ul></div>
+                </ul>
+                
+            </div>
+            
       
-            <ul class="footer-items footer-social list-unstyled">
-                <li class="footer-social__item">
-                    <a href="https://www.facebook.com/hop3team/" target="_blank" rel="noreferrer" title="Facebook - Hop3team">
-                        <img src="https://www.hop3team.com/wp-content/themes/hop3team-charte6/dist/images/social/facebook.svg" alt="Facebook" class="inline-svg">
-                    </a>
-                    </li>
-                <li class="footer-social__item">
-                    <a href="https://www.instagram.com/hop3team/" target="_blank" rel="noreferrer" title="Instagram - Hop3team">
-                        <img src="https://www.hop3team.com/wp-content/themes/hop3team-charte6/dist/images/social/instagram.svg" alt="Instagram" class="inline-svg">
-                    </a>
-                    </li>
-                <li class="footer-social__item">
-                    <a href="https://www.linkedin.com/company/hop3team/?originalSubdomain=fr" target="_blank" rel="noreferrer" title="LinkedIn - Hop3team">
-                        <img src="https://www.hop3team.com/wp-content/themes/hop3team-charte6/dist/images/social/linkedin.svg" alt="Linkedin" class="inline-svg">
-                    </a>
-                    </li>
-                <li class="footer-social__item">
-                    <a href="https://twitter.com/hop3team?lang=fr" target="_blank" rel="noreferrer" title="Twitter - Hop3team">
-                        <img src="https://www.hop3team.com/wp-content/themes/hop3team-charte6/dist/images/social/twitter.svg" alt="Twitter" class="inline-svg">
-                    </a>
-                    </li>
-            </ul>
+            
         </div>
      </div>
     </div>
