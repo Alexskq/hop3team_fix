@@ -20,3 +20,15 @@
 .navbar-toggler .collapsed {
   border-style: none;
 }
+
+.nav-item:hover {
+  border-top: 4px solid #e7b746;
+  transition: left 300ms ease, right 300ms ease;
+  a {
+    color: #e7b746;
+  }
+}
+
+.header img {
+  width: 100%;
+}
